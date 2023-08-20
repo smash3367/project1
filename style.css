@@ -1,0 +1,337 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+body{
+    background-color: #302B2B;
+}
+
+header{
+    width: 100vw;
+    height: 70px;
+    background-color: #363636;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header>*{
+    height: 45px;
+    background: rgb(255, 255, 255);
+    margin: 5px;
+    transition: 0.15s;
+}
+
+header>*:hover{
+    color: rgba(255, 255, 255, 0.95);
+    background-color: #414141;
+    cursor: pointer;
+}
+
+.header-void{
+    width: 300px;
+    height: 70px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.header-void:hover{
+    width: 300px;
+    height: 70px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.header-logo{
+    width: 80px;
+    height: 55px;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20;
+    font-family:  'ABeeZee', sans-serif;
+}
+
+.header-search{
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 20;
+    color: rgba(255, 255, 255, 0.65);
+    background: none;
+    border-radius: 5px;
+}
+
+.header-callback{
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 20;
+    color: rgba(255, 255, 255, 0.65);
+    background: none;
+    border-radius: 5px;
+}
+
+.header-callback path{
+    transition: 0.15s;
+}
+
+.header-callback:hover path{
+    fill: rgba(255, 255, 255, 0.95);
+}
+
+
+.header-account{
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 20;
+    color: rgba(255, 255, 255, 0.65);
+    background: none;
+    border-radius: 5px;
+}
+
+.header-language{
+    width: 150px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 20;
+    color: rgba(255, 255, 255, 0.65);
+    background: none;
+    border-radius: 5px;
+}
+
+.header-language>img{
+    transition: 0.15s;
+}
+
+.header-language:hover>img{
+    opacity: 1;
+}
+
+.header-language>img{
+    width: 31px;
+    height: 30px;
+    opacity: 0.7;
+    margin-left: 5px;
+}
+
+.header-value{
+    width: 150px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 20;
+    color: rgba(255, 255, 255, 0.65);
+    background: none;
+    border-radius: 5px;
+}
+
+.header-value>svg{
+    fill: rgba(255, 255, 255, 0.65);
+    transition: 0.15s;
+}
+
+.header-value:hover>svg{
+    fill: rgba(255, 255, 255, 0.95);
+}
+
+.body-popular_today{
+    width: 326px;
+    height: 370px;
+    top: 90px;
+    right: 10px;
+    background-color: #363636;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    position: absolute;
+}
+
+.body-popular_today-text{
+    width: 326px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.65);
+    font-family:  'ABeeZee', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.body-popular_today-line{
+    width: 274px;
+    height: 10px;
+    background-color: #302B2B;
+    display: flex;
+    margin-top: 10px;
+}
+
+.body-popular_today-overflow{
+    position: absolute;
+    top: 55px;
+    height: 315px;
+    overflow-y: scroll;
+}
+
+.body-popular_today-category{
+    width: 300px;
+    height: 40px;
+    background-color: #3C3C3C;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.body-popular_today-category-place{
+    width: 28px;
+    height: 28px;
+    background-color: rgb(108, 107, 107);
+    font-weight: 900;
+    font-family:  'ABeeZee', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px black ;
+    box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.65);
+    left: 5px;
+    position: relative;
+    
+}
+
+
+.body-popular_today-category-name{
+    width: 80px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    color:rgba(255, 255, 255, 0.5);
+    font-family:  'ABeeZee', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 10px;
+}
+
+.body-popular_today-category-visits{
+    width: 160px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family:  'ABeeZee', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    right: 15px;
+}
+
+.body-chat{
+    width: 326px;
+    height: 320px;
+    background-color: #363636;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    position: absolute;
+}
+
+.body-chat-text{
+    width: 326px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.65);
+    font-family:  'ABeeZee', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.body-chat-line{
+    width: 274px;
+    height: 10px;
+    background-color: #302B2B;
+    display: flex;
+    margin-top: 10px;
+}
+
+.body-registration{
+    width: 600px;
+    height: 600px;
+    background-color: #3C3C3C;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+    position: absolute;
+    left: calc(50vw - 300px);
+    top: 100px;
+}
+
+.body-brightness{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(30, 30, 30, 0.3);
+    position: absolute;
+    z-index: 2;
+}
+
+.body-registration-text{
+    width: 326px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0px 0px 5px rgb(243, 230, 158);
+    font-family:  'ABeeZee', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.body-registration-line{
+    width: 274px;
+    height: 10px;
+    background-color: #302B2B;
+    display: flex;
+    margin-top: 10px;
+}
+
+.body-registaration-user{}
+
+.body-registaration-password{}
+
+.body-registaration-email{}
+
+.body-registaration-checkbox{}
+
+.body-registaration-checkbox-policity{}
+
+.body-registaration-checkbox-post
