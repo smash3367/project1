@@ -11,7 +11,7 @@ body{
 
 header{
     width: 100vw;
-    height: 70px;
+    height: 60px;
     background-color: #363636;
     display: flex;
     justify-content: space-around;
@@ -70,7 +70,7 @@ header>*:hover{
 }
 
 .header-callback{
-    width: 200px;
+    width: 180px;
     height: 45px;
     display: flex;
     justify-content: center;
@@ -92,7 +92,7 @@ header>*:hover{
 
 
 .header-account{
-    width: 200px;
+    width: 150px;
     height: 45px;
     display: flex;
     justify-content: center;
@@ -126,14 +126,14 @@ header>*:hover{
 }
 
 .header-language>img{
-    width: 31px;
-    height: 30px;
+    width: 25.5px;
+    height: 25px;
     opacity: 0.7;
     margin-left: 5px;
 }
 
 .header-value{
-    width: 150px;
+    width: 120px;
     height: 45px;
     display: flex;
     justify-content: center;
@@ -288,14 +288,18 @@ header>*:hover{
     height: 600px;
     background-color: #3C3C3C;
     display: flex;
-    justify-content: center;
+    align-items: center;
     z-index: 3;
     position: absolute;
     left: calc(50vw - 300px);
     top: 100px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow:  0px 1px 5px rgb(122, 116, 116);
 }
 
-.body-brightness{
+.body-brghtness{
     width: 100vw;
     height: 100vh;
     background-color: rgba(30, 30, 30, 0.3);
@@ -304,23 +308,42 @@ header>*:hover{
 }
 
 .body-registration-text{
-    width: 326px;
+    width: 474px;
     height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(255, 255, 255, 0.8);
-    text-shadow: 0px 0px 5px rgb(243, 230, 158);
+    color: /*rgba(255, 255, 255, 0.8);*/ #9E9E9E;
+    text-shadow: 0px 0px 1px /*rgb(243, 230, 158);*/ white;
     font-family:  'ABeeZee', sans-serif;
     font-size: 20px;
     margin-top: 20px;
+    position: relative;
+}
+
+.body-registration-text-registration {
+    color: #c1bdbd;
+}
+
+.body-registration-text-login {
+    /* position: absolute;
+    right: 10px; */
+    
+}
+
+.body-registration-text-line{
+    width: 2.5px;
+    height: 20px;
+    background-color: #9E9E9E;
+    margin: 10px;
 }
 
 .body-registration-line{
-    width: 274px;
+    width: 474px;
     height: 10px;
     background-color: #302B2B;
     display: flex;
+    position: relative;
     margin-top: 10px;
 }
 
@@ -334,4 +357,4 @@ header>*:hover{
 
 .body-registaration-checkbox-policity{}
 
-.body-registaration-checkbox-post
+.body-registaration-checkbox-post{}
